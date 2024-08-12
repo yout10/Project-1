@@ -1,4 +1,4 @@
 function login(){
-    window.location.href = 'Project-1/login/login.html';
+    window.location.href = 'login/login.html';
 }
 
