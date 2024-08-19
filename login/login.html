@@ -14,12 +14,68 @@
     <input type="text" id="name" name="name" autocomplete="name"><br><br>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" autocomplete="email"><br><br>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message"></textarea><br><br>
-    <input type="submit" value="Submit">
+    <!-- <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br><br> -->
+    <input type="submit" value="Submit" id="submit">
   </form>
 
 
-  <script src="script.js"></script>
+
+  <!-- backend time -->
+
+
+
+  <script type="module">
+
+    // after clicking submit button
+
+    const form = document.getElementById('myForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      
+      // Check if all fields are filled
+      
+    });
+    
+    
+    // login data send
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getDatabase, ref, set, get, child} from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
+    
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBb3srhv-w7l4g5apQdt1Y9lXjuCi94fxY",
+      authDomain: "four-f08d5.firebaseapp.com",
+      projectId: "four-f08d5",
+      storageBucket: "four-f08d5.appspot.com",
+      messagingSenderId: "637184465627",
+      appId: "1:637184465627:web:d1ce978df669a446c2cafe",
+      measurementId: "G-GK32L247BE"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    
+    document.getElementById("submit").addEventListener('click' , function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      set(ref(db, 'user/' + document.getElementById("name").value),
+      {
+    
+                  username: document.getElementById("name").value,
+                  email: document.getElementById("email").value,
+                  // message: document.getElementById("messsage").value,
+
+                });
+                  alert("Login Sucessfull  !");
+                  window.location.href = "../user.html";
+              });
+  </script> 
 </body>
 </html>
