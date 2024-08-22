@@ -14,8 +14,8 @@
     <input type="text" id="name" name="name" autocomplete="name"><br><br>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" autocomplete="email"><br><br>
-    <!-- <label for="message">Message:</label>
-    <textarea id="message" name="message"></textarea><br><br> -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" autocomplete="password"><br><br>
     <input type="submit" value="Submit" id="submit">
   </form>
 
@@ -36,10 +36,7 @@
       e.preventDefault();
       
       
-      // Check if all fields are filled
-      
-    });
-    
+    });    
     
     // login data send
     
@@ -72,6 +69,7 @@
       {
                   username: document.getElementById("name").value,
                   email: document.getElementById("email").value,
+                  password: document.getElementById("password").value,
                 });
                   alert("Login Sucessfull  !");
       });

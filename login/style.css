@@ -17,7 +17,7 @@ body {
     margin-bottom: 10px;
   }
   
-  input[type="text"], input[type="email"], textarea {
+  input[type="text"], input[type="email"], input[type="password"]{
     width: 90%;
     padding: 10px;
     border-radius: 10px;
@@ -26,8 +26,8 @@ body {
   }
   
   input[type="submit"] {
-    background-color: #172d17;
-    color: #fff;
+    background-color: #020502;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
