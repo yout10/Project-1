@@ -1,8 +1,11 @@
 body{
+    display: block;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
     justify-content: center;
     align-items: center;
+    color: lightyellow;
 }
 
 nav{
@@ -16,9 +19,11 @@ nav .menu button{
     font-size: 20px;
     background: none;
     border: none;
+    color: lightpink;
 }
 nav h1{
-    font-size: 40px;
+    font-size: 60px;
+    color: rgb(156, 156, 156);
 }
 .menu{
     display: flex;
@@ -46,21 +51,42 @@ nav h1{
     max-width: var(nav);
 }
 
+
+
+/* content */
+
 main{
-    justify-content: center;
-    align-items: center;
+    display: flex;
+
+    .content{
+        width: fit-content;
+        p{
+            font-size: larger;
+        }
+    }
 }
 
-#search-bar{
+/* know-more */
+
+.know-more{
+    border: none;
     border-radius: 20px;
-    border: solid;
-    border-width: 1px;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 50px;
-}
-#search-bar::placeholder{
-    font-size: larger;
+    width: 100px;
+    height: 40px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
+.know{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 158px;
+height: 158px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #666666 92.5%);
+background-blend-mode: soft-light;
