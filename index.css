@@ -81,12 +81,3 @@ main{
     align-items: center;
     justify-content: center;
 }
-
-/* Ellipse 1 */
-
-position: absolute;
-width: 158px;
-height: 158px;
-
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #666666 92.5%);
-background-blend-mode: soft-light;
