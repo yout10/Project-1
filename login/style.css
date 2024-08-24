@@ -1,13 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+    color: #f0f0f0;
   }
   
   form {
     max-width: 300px;
     margin: 40px auto;
     padding: 20px;
-    border: 1.5px solid #332121;
+    border: 2px solid #332121;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -26,11 +28,12 @@ body {
   }
   
   input[type="submit"] {
-    background-color: #020502;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,0,0,1) 100%);
     color: #ffffff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     width: 100%;
   }
